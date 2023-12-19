@@ -1,2 +1,3 @@
 # bigbadassdudedotcom
-a website for big, badass dudes.
+
+For honoring *big*, *badass* dudes.
