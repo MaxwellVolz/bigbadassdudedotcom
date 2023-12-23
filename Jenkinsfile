@@ -19,7 +19,7 @@ pipeline {
                     docker build -t bigbadassdude-website .
                     docker stop bigbadassdude-website-container || true
                     docker rm bigbadassdude-website-container || true
-                    docker run -d -p 8081:80 -p 8082:443 \
+                    docker run -d -p 8081:80 -p 8083:443 \
                         -v /etc/letsencrypt/live/bigbadassdude.com/fullchain.pem:/etc/nginx/ssl/fullchain.pem:ro \
                         -v /etc/letsencrypt/live/bigbadassdude.com/privkey.pem:/etc/nginx/ssl/privkey.pem:ro \
                         --name bigbadassdude-website-container bigbadassdude-website
